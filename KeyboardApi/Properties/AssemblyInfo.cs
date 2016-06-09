@@ -1,15 +1,14 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Keyboard")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("KeyboardApi")]
+[assembly: AssemblyDescription("Send/PostMessage API wrapper - https://github.com/iXab3r/Keyboard")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("Keyboard")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("KeyboardApi")]
 [assembly: AssemblyCopyright("Copyright © mmoBro 2009")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

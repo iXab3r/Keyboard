@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Keyboard;
+using KeyboardApi;
 
 namespace KeyboardDemo
 {
@@ -18,7 +18,7 @@ namespace KeyboardDemo
 
 			try
 			{
-				List<Key> keys = "hello world".Select(c => new Key(c)).ToList();
+				List<VKey> keys = "hello world".Select(c => new VKey(c)).ToList();
 				var procId = p.Id;
 				Console.WriteLine("ID: " + procId);
 				Console.WriteLine("Sending background keypresses to write \"hello world\"");

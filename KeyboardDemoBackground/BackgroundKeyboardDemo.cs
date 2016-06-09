@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Management;  // <=== Add Reference required!!
 using System.Diagnostics;
-using Keyboard;
+using KeyboardApi;
 
 namespace KeyboardDemoBackground
 {
@@ -24,13 +24,13 @@ namespace KeyboardDemoBackground
         {
             try
             {
-                List<Key> keys = "sent one key at a time".Select(c => new Key(c)).ToList();
+                List<VKey> keys = "sent one key at a time".Select(c => new VKey(c)).ToList();
                 string message = "hello world";
                 var procId = Process.GetCurrentProcess().MainWindowHandle;
                 Console.WriteLine("ID: " + procId);
                 Console.WriteLine("Sending background keypresses to write \"hello world\"");
 
-                Keyboard.Messaging.SendChatTextSend(procId, message);
+                Messaging.SendChatTextSend(procId, message);
 
                 foreach (var key in keys)
                 {
